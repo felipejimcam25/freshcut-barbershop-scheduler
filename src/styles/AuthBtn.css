@@ -1,0 +1,35 @@
+.authBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 1.5rem;
+    border-radius: 0.2rem;
+    border: 1px solid #000;
+    background: linear-gradient(102deg, #1E3A8A 0%, #00236F 100%);
+    border-radius: 1rem;
+    color: #FFF;
+    font-size: 1rem;
+    transform: translateX(0);
+    transition: all .5s ease;
+}
+
+
+
+.authBtn:hover {
+    background: transparent;
+    border: 1px solid #1E3A8A;
+    color: #00236F;
+}
+
+.authBtn:hover span svg {
+
+    transition: all .5s ease;
+
+}
+
+.authBtn:hover span svg {
+    color: #00236F;
+    transform: translateX(7px);
+}
+

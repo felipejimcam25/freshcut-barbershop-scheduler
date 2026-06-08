@@ -1,0 +1,145 @@
+.fc-day-past {
+    background-color: #f5f5f585 !important;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+
+.appointmentModal {
+    position: fixed;
+    width: 90%;
+    background: #FFF;
+    border: 1px solid var(--blue-dark);
+    padding: 1.5rem 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    font-family: 'montserrat';
+}
+input {
+    font-family: 'montserrat';
+    background: none !important;
+}
+
+.appointmentModal.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+.slotsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.slotsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.appointemntForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.slot {
+    border: 1px solid var(--blue-dark);
+    color: #000;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.slot input {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.slot span {
+    font-weight: 400;
+    text-align: center;
+    font-size: 0.9rem;
+    pointer-events: none;
+}
+
+.slot:hover input {
+    color: #FFF;
+}
+
+.slot:hover {
+    background-color: var(--blue-light);
+    border: 1px solid transparent;
+    color: #FFF;
+}
+
+.slot.selected {
+    background-color: var(--blue-light);
+    border: 1px solid transparent;
+    color: #FFF;
+}
+
+.slot.selected input {
+    color: #FFF;
+}
+
+.closeModalBtn {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.closeModal svg {
+    width: 20px;
+    height: 20px;
+    color: var(--blue-dark);
+}
+
+.ButonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bookBtnForm {
+    display: flex;
+    padding: 1.09375rem  1.15625rem ;
+    color: #FFF;
+    font-family: 'montserrat', sans-serif;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    background: linear-gradient(135deg, #1E3A8A 0%, #00236F 100%);
+}
+
+.bookBtnForm:hover {
+    background: transparent;
+    border: 1px solid #1E3A8A;
+    color: #00236F;
+    font-weight: 600;
+}
