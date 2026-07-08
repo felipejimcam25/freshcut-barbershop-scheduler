@@ -5,6 +5,8 @@ import Dashboard from "../pages/Dashboard";
 import Book from "../pages/Book";
 import ProtectedRoute from "./ProtectedRoute";
 import AdminDashboard from "../pages/AdminDashboard";
+import LoyaltyPage from "../pages/LoyaltyPage";
+import ProfilePage from "../pages/ProfilePage";
 
 function AppRoutes() {
     return (
@@ -18,6 +20,8 @@ function AppRoutes() {
                 <Route element={<ProtectedRoute />}>
                     <Route path="/dashboard" element={<Dashboard/>} />
                     <Route path="/book" element={<Book/>} />
+                    <Route path="/loyalty" element={<LoyaltyPage/>} />
+                    <Route path="/profile" element={<ProfilePage/>} />
                     <Route path="/admin/dashboard" element={<AdminDashboard/>} />
                 </Route>
 

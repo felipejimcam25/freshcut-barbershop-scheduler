@@ -17,8 +17,7 @@ export default function AuthInput ({
                 placeholder={ placeholder }
                 name={ name }
                 value={ value }
-                onChange={onChange}
-                required
+                onChange={onChange} 
             />
             <label htmlFor={ forHtml }>{ labelText }</label>
         </div>

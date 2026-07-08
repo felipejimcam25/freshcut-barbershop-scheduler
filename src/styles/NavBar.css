@@ -19,6 +19,7 @@
     list-style: none;
     gap: 2rem;
     justify-content: space-between;
+    background-color: #fff;
 }
 
 .navLink {

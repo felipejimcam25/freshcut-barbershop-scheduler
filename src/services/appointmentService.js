@@ -19,3 +19,18 @@ export const createAppointment = async (data) => {
     }
 
 }
+
+export const editAppointment = async (data) => {
+    try {
+        const response = await api.put(`/appointments/${data.id}`, data, {
+            headers: {
+                Authorization: `BEARER ${token}`
+            }
+        });
+
+        return response;
+    } catch (err) {
+        console.log(err);
+        
+    }
+} 

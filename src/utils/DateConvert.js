@@ -1,15 +1,17 @@
 export const DateConvert = (date) => {
     
+    const [year, month, day] = date.split('T')[0].split('-');
 
-    const d = new Date(date);
-
-    const month = d.toLocaleString("en-US", { month: 'short' });
-
-    const day = d.getDate();
+    const monthName = new Date(
+        Number(year),
+        Number(month) - 1,
+        1
+    ).toLocaleString("en-US", { month: "short" });
 
     return {
-        month, day
-    }
+        month: monthName,
+        day: Number(day)
+    };
 }
 
 export const getAmPm = (time) => {

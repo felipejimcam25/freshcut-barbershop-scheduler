@@ -14,7 +14,8 @@
     --success-text: #166534;
     --error-color: rgba(239, 68, 68, 0.10);
     --error-text: #991B1B;
-    --warn-text: #EAB308;
+    --warn-color: rgba(234, 179, 8, 0.10);
+    --warn-text: #854D0E;
     --info-color: rgba(30, 58, 138, 0.10);
     --info-text: #1E3A8A;
     --icon-unactive-color: #444651;
@@ -41,4 +42,8 @@ button {
     border: none;
     background: none;
     outline: none;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
 }

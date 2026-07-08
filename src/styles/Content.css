@@ -116,5 +116,18 @@
 .status.on.time {
     color: var(--success-text);
 }
+.buttonsCard {
+    display: flex;
+    align-items: center;
+}
+.deleteBtn svg, .editBtn svg {
+    width: 20px;
+    height: 22px;
+    fill: #fff;
+}
+
+.deleteBtn svg:hover, .editBtn svg:hover {
+    fill: var(--icon-active-color);
+}
 
 /* APPOINTMENT CARD STYLES */

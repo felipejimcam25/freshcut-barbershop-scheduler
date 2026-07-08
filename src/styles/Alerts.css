@@ -1,3 +1,82 @@
+/* DEFAULT STYLES */
+
+.alert {
+    width: 50%;
+    height: 60px;
+    padding: 0.5rem;
+    position: fixed;
+    right: 0;
+    display: flex;
+    top: 14%;
+    opacity: 0;
+    visibility: hidden;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 0.5rem 0 0 0.5rem;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+.alert.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.alert.error {
+    background: var(--error-color);
+    color: var(--error-text);
+    border: 1px solid var(--error-text);
+}
+
+.alert.success {
+    background-color: var(--success-color);
+    color: var(--success-text);
+    border: 1px solid var(--success-text);
+}
+
+.alert.warn {
+    background: var(--warn-color);
+    color: var(--warn-text);
+    border: 1px solid var(--warn-text);
+}
+
+.infoAlert {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.infoAlert span {
+    margin: 0 auto;
+}
+
+.infoAlert div svg {
+    width: 20px;
+    height: 20px;
+} 
+
+.close {
+    height: 100%;
+    display: flex;
+    align-items: start;
+    padding: 0.2rem;
+}
+
+.close svg {
+    width: 15px;
+    height: 15px;
+}
+
+
+
+/* DEFAULT STYLES */
+
+
+/* SUCCESS ALERT */
+
 .successAlert {
     background-color: var(--success-color);
     width: 80%;
@@ -44,3 +123,10 @@
     color: var(--success-text);
     width: 20px;
 }
+/* SUCCESS ALERT */
+
+/* ERROR ALERT */
+
+
+/* ERROR ALERT */
+

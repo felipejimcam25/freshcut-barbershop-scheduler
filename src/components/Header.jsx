@@ -27,7 +27,7 @@ function Header() {
     }
 
     return (
-        <header className=''>
+        <header className='headerPage'>
             <div className="brand">
                 <img src={Logo} alt="Logo FreshCut" className='logoHeader' />
                 <span className='brandName'>FreshCut</span>

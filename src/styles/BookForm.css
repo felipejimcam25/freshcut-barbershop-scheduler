@@ -4,13 +4,21 @@
     opacity: 0.5;
 }
 
+.fc-day {
+    cursor: pointer;
+}
+
+.bookContainer {
+    padding-top: 6rem;
+}
+
 
 .appointmentModal {
     position: fixed;
-    width: 90%;
+    width: 95%;
     background: #FFF;
     border: 1px solid var(--blue-dark);
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 1.5rem;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -43,6 +51,7 @@ input {
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
+    min-width: 380px;
 }
 
 .slotsContainer {
@@ -117,6 +126,22 @@ input {
     color: var(--blue-dark);
 }
 
+.bookInput {
+    border: 1px solid var(--blue-dark);
+    padding: 0.9rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.bookInput:disabled {
+    border: 1px solid var(--blue-dark);
+    padding: 0.9rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+select.bookInput option {
+    border: 1px solid var(--blue-dark);
+}
+
 .ButonContainer {
     display: flex;
     justify-content: center;
@@ -142,4 +167,22 @@ input {
     border: 1px solid #1E3A8A;
     color: #00236F;
     font-weight: 600;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.paginationButtons {
+    display: flex;
+    justify-content: right;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.prev svg, 
+.next svg {
+    width: 15px;
 }
